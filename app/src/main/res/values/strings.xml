@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Veloeye</string>
+    <string name="email_address">email address</string>
+    <string name="email_address_police"> pnn email address</string>
+    <string name="password">password</string>
+    <string name="log_in">log in</string>
+    <string name="or_create_new_account">create a pnn account</string>
+    <string name="scan_a_sticker">scan a sticker</string>
+    <string name="my_bikes">my bikes</string>
+    <string name="delete_bike">DELETE BIKE</string>
+    <string name="my_bikes_heading">MY BIKES</string>
+    <string name="beathethieves">#beathethieves</string>
+    <string name="contactInfo">"please submit your enquiry to the veloeye team in the form below and we will respond as quickly as we can. You may also connect with us on our social media channels</string>
+    <string name="thanks">Thanks for scanning me, as you can see I\'ve been registered with veloeye as all is good!\n\n
+    My owner might not be with me right now but will be able to see that I have just been scanned which is great help as it shows that one of the veloeye community has taken time to scan me .\n\n\n
+    We need all the eyes we can get to combat bike theft,so please do keep scanning any veloeye-tagged bikes</string>
+    <string name="trasfer_bike_three">our complete terms and conditions &amp; GDPR privacy policy are available on the Veloeye website <font fgcolor="orange">here</font></string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="my_profile_dashboard">my profile</string>
+    <string name="veloeye_shop">Veloeye shop</string>
+    <string name="register">Register</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Surname</string>
+    <string name="bike_location">click to report bike location</string>
+    <string name="password_field">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="gender">Gender:</string>
+    <string name="email_address_field">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="done">I\'m done</string>
+    <string name="confirm_transfer">confirm transfer</string>
+    <string name="submit">submit</string>
+    <string name="update">update</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_bikes_title">My Bikes</string>
+    <string name="my_bikes_nav">MY BIKES</string>
+    <string name="scan_sticker">SCAN A STICKER</string>
+    <string name="nav_facebook">FACEBOOK</string>
+    <string name="nav_twitter">TWITTER</string>
+    <string name="nav_instagram">INSTAGRAM</string>
+    <string name="nav_website">WEBSITE</string>
+    <string name="nav_signout">SIGN OUT</string>
+    <string name="scan_text">Please hover the window below over the sticker code to scan the sticker and get the status of the bike</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="police_access">POLICE ACCESS ONLY</string>
+    <string name="please_enter_police">Please enter your pnn email address and password in the form below to log in to veloeye app</string>
+    <string name="login_failed">Login failed</string>
+    <string name="incorrect_email_password">Incorrect email address or password, please try again</string>
+    <string name="welcome_name">WELCOME TO VELOEYE</string>
+    <string name="please_log">Please log in using your \n email address and password</string>
+    <string name="field_cant_be_empty">field can\'t be empty</string>
+    <string name="select_gender">Please select your gender</string>
+    <string name="passwords_dont_match">Password and confirmation password don\'t match</string>
+    <string name="account_created">Account created, you can log in now</string>
+    <string name="error">Error</string>
+    <string name="server_not_responding">Server is not responding or there are some networking issues, please check your network and try again later.</string>
+    <string name="active">Active</string>
+    <string name="actions">actions</string>
+    <string name="stolen">Stolen</string>
+    <string name="are_you_sure_stolen">Are you sure you want to mark this bike as stolen? This will send alerts out to social media.</string>
+    <string name="are_you_sure_active">Are you sure you want to mark this bike as active?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="info">Other information</string>
+    <string name="take_photo">TAKE A PHOTO</string>
+    <string name="image_upload">IMAGE_UPLOAD</string>
+    <string name="owner">The owner of the bike has reported the bike stolen!</string>
+    <string name="options">Options:1. Report this location to the owner by clicking the button</string>
+    <string name="update_bike">Update Bike</string>
+    <string name="model">Model</string>
+    <string name="color">Color</string>
+    <string name="year">Year</string>
+    <string name="frame_number">Frame number</string>
+    <string name="problem_saving_photo">There was a problem saving the photo…</string>
+    <string name="select_image">Select Image</string>
+    <string name="check_edit_fields">Please check the edit fields, something is wrong.</string>
+    <string name="location_disabled">Please enable location services.</string>
+    <string name="ok">OK</string>
+    <string name="bike_updated">Bike updated</string>
+    <string name="bike_added">Bike added</string>
+    <string name="survey">Survey</string>
+    <string name="survey_went_wrong">Something went wrong while sending the survey, please try again.</string>
+    <string name="survey_thank_you">Thank you for completing the survey.</string>
+    <string name="sending_data_wrong">Something went wrong while sending data, please try again.</string>
+    <string name="sticker_not_found">Sticker not found</string>
+    <string name="active_bike_scanned">ACTIVE BIKE SCANNED!\n\nHey, thanks for scanning me! The owner has registered their bike with Veloeye and everything is good.</string>
+    <string name="keep_scanning">Keep scanning, we need\nall the eyes we can get!</string>
+    <string name="bike_reported_stolen">BIKE REPORTED STOLEN!</string>
+    <string name="send_owner_location">SEND OWNER LOCATION ALERT</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="add_new_bike">Add New Bike</string>
+    <string name="manufacturer">Tap to select manufacturer</string>
+    <string name="tap_to_add_image">Tap to add image</string>
+    <string name="new_password">New Password</string>
+    <string name="photos">If you have photos of your bike you may upload them using the uploader</string>
+    <string name="please_enter_your">Please enter your data in the form below for your stickered bike</string>
+    <string name="please_enter_forgot_password">Please enter your email address in the form below and we will send you a link to reset your password</string>
+    <string name="forgotten_password">FORGOTTEN PASSWORD</string>
+    <string name="forgot_password">forgotten password?</string>
+    <string name="account_creation">ACCOUNT CREATION</string>
+    <string name="create_account">create account</string>
+    <string name="save_changes">save changes</string>
+    <string name="reset_password">reset password</string>
+    <string name="create_account_profile">Account created :(date from service)</string>
+    <string name="terms_accepted">Terms accepted :(date from service)</string>
+    <string name="account_creation_text">Please enter your details in the form below to create your veloeye account.Details will be emailed to you post-registration</string>
+    <string name="mobile_telephone">Mobile/Telephone</string>
+    <string name="profile_updated">Profile updated</string>
+    <string name="select_manufacturer">Please select bike manufacturer</string>
+    <string name="change_status_info">To change the status of your bike please tap on the green Active box (or red Stolen to change it back to Active)</string>
+    <string name="please_enter">Please enter your registered email address and password in the form below to log into veloeye application</string>
+    <string name="login_text">You are logged into the veloeye app as an authorised police officer user.This wil number the registered name and mobile number of any veloeye labelled bike which you can scan by tapping the \"scan a sticker\" icon above</string>
+    <!-- Survey -->
+    <string name="q1">How soon after reported as stolen was retrieved?</string>
+    <string name="confirm">confirm deletion</string>
+    <string name="you_are">You are about to delete a bike from your account .Once this is done the bike will no longer be accessible</string>
+    <string name="trasfer_bike">You have chosen to transfer ownership of the selected bike from your
+        account to another veloeye user. </string>
+    <string name="trasfer_bike_second">Please enter the username who will assume ownership of the bike</string>
+    <string name="veloeye_username">Veloeye Username</string>
+    <string name="submit_enquiry">SUBMIT ENQUIRY</string>
+    <string name="transfer_code">Transfer code</string>
+
+    <string-array name="q1_answers">
+        <item>&lt; 1 hour</item>
+        <item>&lt; 6 hours</item>
+        <item>&lt; 12 hours</item>
+        <item>&lt; 24 hours</item>
+        <item>&gt; 1 day</item>
+    </string-array>
+
+    <string name="q2">Is bike useable?</string>
+    <string-array name="q2_answers">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="q3">How far from stolen location was bike when found?</string>
+    <string-array name="q3_answers">
+        <item>&lt; 1 mile</item>
+        <item>&lt; 2 miles</item>
+        <item>&lt; 5 miles</item>
+        <item>&lt; 10 miles</item>
+        <item>&gt; 10 miles</item>
+    </string-array>
+
+    <string name="q4">Would you say Veloeye helped get the bike back?</string>
+    <string-array name="q4_answers">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="stolen_bike_scanned">Stolen bike was scanned, you can see more details by touching this notification.</string>
+    <string name="locations_bike_scanned">These are the locations where your stolen bike was scanned. Last location is marked with red.</string>
+    <string name="perm_camera_storage">Camera and storage permissions are required in order to take fully advantage of this app.</string>
+    <string name="perm_camera_location">Camera and location permissions are required in order to take fully advantage of this app.</string>
+    <string name="perm_location">Location permission is required in order to take fully advantage of this app.</string>
+    <string name="perm_these">These permissions are required in order to take fully advantage of this app.</string>
+
+    <string name="perm_camera">Camera permissions are required for scanning.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="stolen_a_bike">stolen bike map</string>
+    <string name="contact_veloeye">contact veloeye</string>
+    <string name="social_media">visit us online</string>
+    <string name="title_activity_forget_password">ForgetPassword</string>
+    <string name="title_activity_active_bike">ActiveBike</string>
+    <string name="title_activity_stolen_bike">StolenBike</string>
+    <string name="contact_owner">Contact the owner (name in here) on their mobile number(number here)</string>
+    <string name="title_activity_image_uploading">ImageUploading</string>
+    <string name="title_activity_transfer_bike">TransferBike</string>
+    <string name="nav_youtube">YOUTUBE</string>
+    <string name="police_login"><u>Police Login</u></string>
+
+</resources>

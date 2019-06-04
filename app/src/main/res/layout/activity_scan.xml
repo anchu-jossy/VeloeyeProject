@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_backer_with_logo"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <LinearLayout
+        android:id="@+id/dashboard_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:background="@drawable/dashboard"
+        android:orientation="horizontal"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textview_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeuib"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/scan_sticker"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:layout_marginTop="10dp"
+            android:text="@string/scan_text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/scanner_fragment"
+        android:name="com.veloeye.fragment.SimpleScannerFragment"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textView9"
+
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="anju123"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/md_listitem_textsize" />
+
+</LinearLayout>

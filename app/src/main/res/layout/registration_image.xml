@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/ll_addbike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/segoeuib"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="BIKE IMAGES"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:clickable="true"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Please select images for the bike"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/image_Camera_gallary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_photos"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/left_camera_arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/left_arrowimage" />
+
+               <!-- <ImageView
+                    android:id="@+id/left_camera_Image"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/textView_photos"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_grey_rounded" />-->
+               <!-- <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/textView_photos"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_grey_rounded" />-->
+
+                <com.yarolegovich.discretescrollview.DiscreteScrollView
+                    android:id="@+id/picker"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/textView_photos"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bg_grey_rounded"  />
+<!--
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_weight="1"
+            >-->
+
+               <!-- <ImageView
+                    android:id="@+id/right_camera_Image"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/textView_photos"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_grey_rounded" />-->
+
+                <ImageView
+                    android:id="@+id/right_camera_arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:background="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_Camera_gallary"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="219dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/camera_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_photo"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_image_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="219dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bike_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_upload"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_done"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_addbike"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_orange"
+        android:onClick="onClick"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/done"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+    </FrameLayout>
+</RelativeLayout>

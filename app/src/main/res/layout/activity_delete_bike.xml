@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end">
+
+        <ImageView
+            android:id="@+id/imgView_police"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <!-- <ImageView
+                 android:layout_marginLeft="50dp"
+                 android:id="@+id/imageView2"
+                 android:layout_width="70dp"
+                 android:layout_height="70dp"
+                 android:src="@drawable/red_bike"/>
+ -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/segoeuib"
+                android:layout_toRightOf="@+id/imageView2"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/delete_bike"
+                android:textColor="#FFA4381D"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_enter"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/segoeui"
+            android:layout_height="wrap_content"
+            android:text="@string/you_are"
+            android:textColor="#FFA4381D" />
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/itemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+         >
+
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/dashboardbike" />
+                <!--
+                    <FrameLayout
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/btnStatus"
+                        android:background="#e67381"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stolen"
+                            android:id="@+id/tvStatus"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </FrameLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_bikelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/ivImage"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textview_bikename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeuib"
+                        android:text="ram kumar"
+                        android:textColor="#303030"
+                        android:textSize="@dimen/md_listitem_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_manufacturer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="eye 3"
+                        android:textColor="#303030" />
+
+                    <TextView
+                        android:id="@+id/textView_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="red"
+                        android:textColor="#303030" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/btnTransfer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_orange"
+            android:onClick="onClick"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segoeuib"
+                android:text="@string/confirm"
+                android:textColor="#ffff"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

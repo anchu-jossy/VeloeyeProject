@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <ImageView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_mybikes"
+        android:src="@drawable/register_bike"
+        android:text="@string/add_new_bike" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_addbike"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView9"
+
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textView_please_enter_police"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/segoeui"
+            android:gravity="left"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:singleLine="false"
+            android:text="@string/please_enter_your"
+            android:textColor="@android:color/black"
+
+            android:textSize="18sp" />
+
+        <!--  <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+-->
+
+
+            <LinearLayout
+                android:id="@+id/ll_fields"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textView_please_enter_police"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/etMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_mybikes"
+                    android:clickable="true"
+                    android:hint="@string/manufacturer"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#0a0b0d"
+                    android:textColorHint="#b3b0b0"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_mybikes"
+                    android:hint="@string/model"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#0a0b0d"
+                    android:textColorHint="#b3b0b0" />
+
+                <EditText
+                    android:id="@+id/etColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_mybikes"
+                    android:hint="@string/color"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#0a0b0d"
+                    android:textColorHint="#b3b0b0" />
+
+
+                <EditText
+                    android:id="@+id/etFramenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_mybikes"
+                    android:hint="@string/frame_number"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#0a0b0d"
+                    android:textColorHint="#b3b0b0" />
+
+                <EditText
+                    android:id="@+id/etInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_mybikes"
+                    android:hint="@string/info"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#0a0b0d"
+                    android:textColorHint="#b3b0b0" />
+            </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_fields"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_orange"
+            android:onClick="onClick"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/register"
+                android:textColor="#FFFF"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="anju123"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/md_listitem_textsize" />
+
+</RelativeLayout>

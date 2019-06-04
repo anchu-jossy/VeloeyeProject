@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_enquiry"
+            android:textColor="#000000"
+            android:textSize="@dimen/md_listitem_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_please"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_submit"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/contactInfo"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_please"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Subject"
+            android:textColor="#000000"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+        <EditText
+            android:id="@+id/subjectText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_contact"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_textbox"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_enquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subjectText"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Enquiry Details"
+            android:textColor="#000000"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+        <EditText
+            android:id="@+id/enquiryText"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_below="@+id/textView_enquiry"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:background="@drawable/border_textbox"
+            android:textColor="#000000" />
+
+        <FrameLayout
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enquiryText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_orange"
+            android:onClick="onClick"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/btnSubmit"
+                android:layout_gravity="start"
+                android:fontFamily="@font/segoeuib"
+                android:text="@string/submit"
+                android:textColor="#FFFF"
+                android:textSize="@dimen/md_listitem_textsize" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_backer_with_logo"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/ll_police_login_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:background="@drawable/policeicon" />
+
+        <TextView
+            android:id="@+id/textView_enter_police"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeuib"
+            android:text="@string/police_access"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+        <TextView
+            android:id="@+id/textView_please_enter_police"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerInParent="true"
+            android:gravity="left"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/please_enter_police"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/md_listitem_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_police_login_header"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/textView_police_emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+
+            android:text="@string/email_address_police"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_white"
+            android:hint="xxxx.xxxx@xxxx.pnn.police.uk"
+            android:inputType="textEmailAddress"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_white"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/textview_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="@color/md_edittext_error"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+        <FrameLayout
+            android:id="@+id/btnLogIn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_orange"
+            android:onClick="onClick"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segoeui"
+                android:text="@string/log_in"
+                android:textColor="#ffff"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnRegister"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_grey_rounded"
+            android:onClick="onClick"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segoeui"
+                android:text="@string/or_create_new_account"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

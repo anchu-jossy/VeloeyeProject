@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="@string/my_profile" />
+
+    <item
+        android:id="@+id/nav_mybikes"
+        android:icon="@drawable/bike_app"
+        android:title="@string/my_bikes_nav" />
+
+
+    <item
+        android:id="@+id/nav_scan"
+        android:icon="@drawable/scan"
+        android:title="@string/scan_sticker" />
+
+
+    <item
+        android:id="@+id/nav_facebook"
+        android:icon="@drawable/facebook"
+        android:title="@string/nav_facebook" />
+    <item
+        android:id="@+id/nav_twitter"
+        android:icon="@drawable/twitter"
+        android:title="@string/nav_twitter" />
+    <item
+        android:id="@+id/nav_instagram"
+        android:icon="@drawable/instagram"
+        android:title="@string/nav_instagram" />
+    <item
+        android:id="@+id/nav_youtube"
+        android:icon="@drawable/youtube"
+        android:title="@string/nav_youtube" />
+    <item
+        android:id="@+id/nav_website"
+        android:icon="@drawable/ic_logo_big"
+        android:title="@string/nav_website" />
+    <item
+        android:id="@+id/nav_signout"
+        android:icon="@drawable/signout"
+        android:title="@string/nav_signout" />
+
+
+
+</menu>

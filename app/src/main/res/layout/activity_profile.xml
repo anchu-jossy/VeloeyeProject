@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:id="@+id/dashboard_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dashboard_new"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/textview_account_created"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/segoeuib"
+        android:gravity="left"
+        android:text="@string/my_profile"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/md_listitem_textsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_account_created_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_account_created"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/segoeui"
+        android:text="@string/create_account_profile"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textview_terms_accepted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_account_created_profile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/segoeui"
+        android:text="@string/terms_accepted"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_terms_accepted"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:text="@string/first_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/md_listitem_textsize" />
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_white"
+android:padding="6dp"
+                    android:inputType="textPersonName"
+
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="@string/last_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/md_listitem_textsize" />
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_white"
+                    android:ems="10"
+                    android:padding="6dp"
+
+                    android:inputType="textPersonName"
+
+
+
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/mobile_telephone"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text_white"
+            android:enabled="false"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/email_address_field"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text_white"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeui"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/md_listitem_textsize" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text_white"
+            android:textColor="@android:color/black"
+
+            android:inputType="textPassword"
+            android:padding="6dp" />
+
+
+        <FrameLayout
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_orange"
+            android:onClick="onClick"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segoeuib"
+                android:padding="5dp"
+                android:text="@string/save_changes"
+                android:textColor="#FFFF" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="anju123"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/md_listitem_textsize" />
+</RelativeLayout>
